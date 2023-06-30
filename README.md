@@ -5,23 +5,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/sledgehamm3r/sicherheitsgurt">
+  <a href="https://github.com/sledgehamm3r/phonedealer">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Anschnallscript für FiveM</h3>
+  <h3 align="center">Phonedealer für FiveM</h3>
 
   <p align="center">
-    Anschnallscript für FiveM mit visueller Warnung sowie Soundeffekten
+    Ein einfacher Script, welcher einen Handyverkäufer spawnt.
     <br />
-    <a href="https://github.com/sledgehamm3r/sicherheitsgurt"><strong>Dokumentation ansehen »</strong></a>
+    <a href="https://github.com/sledgehamm3r/phonedealer"><strong>Dokumentation ansehen »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sledgehamm3r/sicherheitsgurt">Demo</a>
+    <a href="https://github.com/sledgehamm3r/phonedealer">Demo</a>
     ·
-    <a href="https://github.com/sledgehamm3r/sicherheitsgurt/issues">Bug melden</a>
+    <a href="https://github.com/sledgehamm3r/phonedealer/issues">Bug melden</a>
     ·
-    <a href="https://github.com/sledgehamm3r/sicherheitsgurt/issues">Anfrage stellen</a>
+    <a href="https://github.com/sledgehamm3r/phonedealer/issues">Anfrage stellen</a>
   </p>
 </div>
 
@@ -58,17 +58,12 @@
 <!-- ABOUT THE PROJECT -->
 ## Über das Projekt
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Das Realistische Anschnallsystem für FiveM ist ein leistungsstarker Script, der eine immersive Erfahrung in der virtuellen Welt von FiveM bietet. Dieses Script simuliert das Anschnallen und bietet visuelle und akustische Rückmeldungen, um die Spieler daran zu erinnern, wie wichtig es ist, sich im Straßenverkehr sicher zu verhalten.
+Dieses Fivem-Script ermöglicht es den Spielern, interaktiv mit einem NPC zu interagieren, um ein virtuelles Handy zu kaufen. Der Scriptcode ist einfach zu installieren und anzupassen, da die Konfigurationsdatei verschiedene Einstellungen bietet.
 
 Funktionen:
-* Visuelle Anzeige: Das Script zeigt ein deutlich erkennbares Icon an, das den Spieler darauf hinweist, ob er angeschnallt ist oder nicht. Sobald das Fahrzeug eine Geschwindigkeit von 20 km/h erreicht, wird das Icon sichtbar, um die Spieler an ihre Sicherheit zu erinnern.
-* Realistische Unfalldarstellung: Wenn ein Spieler nicht angeschnallt ist und einen Unfall erleidet, wird er aus dem Fahrzeug geschleudert. Dieses Feature vermittelt eine realistische Konsequenz für unverantwortliches Verhalten und fördert so das Bewusstsein für Verkehrssicherheit.
-* Akustische Rückmeldung: Durch Drücken der Taste "K" kann sich der Spieler anschnallen oder abschnallen. Beim Betätigen dieser Taste ertönt ein Gurtgeräusch, das den Vorgang des Anschnallens bzw. Abschnallens akustisch begleitet. Dadurch wird die Immersion verstärkt und die Spieler ermutigt, sich aktiv mit dem Anschnallsystem auseinanderzusetzen.
-* Config.lua: Der Script hat eine Config.lua, in welcher ihr alles notwenidge ohne große Kenntnisse nach euren Bedürfnissen anpassen könnt!
-
-Das Realistische Anschnallsystem ist speziell für FiveM entwickelt worden und kann nahtlos in deine bestehende Server- oder Client-Ressourcen integriert werden. Es ist einfach zu installieren und zu konfigurieren, und wir haben ausführliche Dokumentationen bereitgestellt, um den Einstieg zu erleichtern.
+* Ein interaktiver NPC, der an bestimmten Koordinaten erscheint und den Spielern die Möglichkeit gibt, ein Handy zu kaufen.
+* Der Kaufvorgang wird durch Drücken der Taste "E" aktiviert, um das Spielgeschehen intuitiv zu gestalten.
+* Die Konfigurationsdatei erlaubt es, die Koordinaten des NPC, den Namen des Handys und den Preis anzupassen, um das Skript an die eigenen Bedürfnisse anzupassen.
 
 
 <p align="right">(<a href="#readme-top">Zurück nach oben</a>)</p>
@@ -86,7 +81,7 @@ Dies ist ein Script für das ESX-Framwork. Demnach sollte dein Server auf der ne
 
 * Lade den neuesten Release herunter.
   ```sh
-  https://github.com/sledgehamm3r/sicherheitsgurt/releases
+  https://github.com/sledgehamm3r/phonedealer/releases
   ```
 
 ### Installation
@@ -94,11 +89,11 @@ Dies ist ein Script für das ESX-Framwork. Demnach sollte dein Server auf der ne
 _Sobald du den Script heruntergeladen hast kommen wir nun zu den weiteren Schritten._
 
 1. Extrahiere den .zip Ordner 
-2. Nenne den Ordner, falls notwendig, um. Er sollte ShameV-sicherheitsgurt heißen.
+2. Nenne den Ordner, falls notwendig, um. Er sollte ShameV-phonedealer heißen.
 3. Kopiere den Ordner in deinen Ressourcen Ordner.
 4. Füge deiner server.cfg folgendes hinzu:
    ```sh
-   start ShameV-sicherheitsgurt
+   start ShameV-phonedealer
    ```
 
 <p align="right">(<a href="#readme-top">Zurück nach Oben</a>)</p>
@@ -108,33 +103,20 @@ _Sobald du den Script heruntergeladen hast kommen wir nun zu den weiteren Schrit
 <!-- USAGE EXAMPLES -->
 ## Benutzung
 
-Die Benutzung des Scriptes ist sehr einfach. Sobald ein Spieler in einem Fahrzeug sitzt und die Taste "K" drückt, wird er angeschnallt - bei wiederholtem Drücken von "K" wird der Spieler wieder abgeschnallt.
-
+Die Benutzung des Scriptes ist sehr einfach. Sobald ein Spieler in der Nähe des NPCs die Taste "E" drückt, kauft er ein Phone und bekommt dieses ins Inventar.
 Die config.lua bietet die Möglichkeit verschiedene Paramater zu ändern: 
 
 ```sh
--- Anschnallton abspielen Ja/Nein
-Config.Sounds = true
-Config.LoopSound = false
-Config.Volume = 0.8
--- Min: 0.0 Max: 1.0
+Config = {}
 
--- Benachrichtungen An/Aus
-Config.Notification = true
-Config.Strings = {seatbelt_on = 'Sicherheitsgurt: ~g~angeschnallt', seatbelt_off = 'Sicherheitsgurt: ~r~abgeschnallt'}
+Config.PhonePrice = 1500 -- Preis des Telefons
+Config.PhoneItem = 'phone' -- Item-Name des Telefons
 
--- Warnbild bei nichtanschnallen An/Aus
-Config.Blinker = true
-
--- Taste für den Gurt (docs.fivem.net/docs/game-references/controls)
-Config.Control = 311
-
--- Geschwindigkeit, ab wann man aus dem Auto fällt, wenn man nicht angeschnallt ist.
-Config.Speed = 50.0
-
--- Ab wieviel KM/H soll das Warnbild erscheinen
-Config.AlarmOnlySpeed = true
-Config.AlarmSpeed = 20
+Config.Ped = {
+    model = 'a_m_y_business_03', -- PED-Modell
+    coords = vector3(148.9992, -234.6454, 53.4),
+    heading = 360.00---Ausrichtung
+}
 ```
 
 <p align="right">(<a href="#readme-top">Zurück nach Oben</a>)</p>
@@ -145,8 +127,7 @@ Config.AlarmSpeed = 20
 ## Roadmap
 
 - [x] Füge Readme.md hinzu
-- [x] Füge Soundeffekte hinzu
-- [x] Füge visuelles Warnbild hinzu
+- [x] Füge Config.lua hinzu
 - [ ] Füge Multi-language Support hinzu
     - [ ] English
 
@@ -187,7 +168,7 @@ Veröffentlicht unter der MIT-Lizenz. Weitere Informationen findest du in der Da
 
 sledgehamm3r - [DISCORD @sledge_hamm3rr] - info@shamev.de
 
-Project Link: [https://github.com/sledgehamm3r/sicherheitsgurt](https://github.com/sledgehamm3r/sicherheitsgurt)
+Project Link: [https://github.com/sledgehamm3r/phonedealer](https://github.com/sledgehamm3r/phonedealer)
 
 <p align="right">(<a href="#readme-top">Zurück nach Oben</a>)</p>
 
