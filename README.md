@@ -17,7 +17,7 @@
     <a href="https://github.com/sledgehamm3r/phonedealer"><strong>Dokumentation ansehen »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sledgehamm3r/phonedealer">Demo</a>
+    <a href="https://youtu.be/D9b5Jx3rdLA">Demo</a>
     ·
     <a href="https://github.com/sledgehamm3r/phonedealer/issues">Bug melden</a>
     ·
